@@ -458,3 +458,21 @@ article svg{fill: var(--background-secondary);}
 /* ----------------------- ID ------------------------- */
 
 /* ================== LOWER SECTION =================== */
+footer{
+    background-color: #014040;
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.developer-head{
+    font-size: 30px;
+}
+
+.developer{
+    margin-top: 1rem;
+}
