@@ -1,0 +1,460 @@
+/* //////////////////////CONFIG////////////////////// #f5f5e1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;800&display=swap');
+
+:root{
+    font-size: 16px;
+    font-family: "Open Sans";
+    position: relative;
+    overflow-x: hidden;
+    --backgorund-primary: white;
+    --background-secondary: #014040;
+    --background-extra: rgb(147, 201, 131);
+    --element-primary: #008f8c;
+    --element-secondary: #f27405;
+    --extra: #d2d1c7;
+    --transition-speed: 400ms;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg-primary{
+    background: var(--backgorund-primary);
+}
+
+.bg-secondary{
+    background: var(--background-secondary)
+}
+
+.element-primary{
+    color: var(--element-primary);
+}
+
+.element-secondary{
+    color: var(--element-secondary);
+}
+
+.self-center{
+    justify-self: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.pos-relat{
+    position: relative;
+}
+
+.pos-abso{
+    position: absolute;
+}
+
+.no-text-decor{
+    text-decoration: none;
+}
+
+.fill-primary{
+    fill: var(--element-primary);
+}
+
+.font{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* //////////////////////CONFIG/////////////////////// */
+/* ///////////////////////CODE//////////////////////// */
+
+body{
+    width: 100vw;
+    height: auto;
+}
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+
+.nav-container{
+    position: fixed;
+    width: 100vw;
+    z-index: 30;
+}
+
+.nav-bar{
+    height: 64px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-flow: column;
+    align-items: center;
+    background: var(--backgorund-primary);
+}
+
+#burger{
+    position: absolute;
+    width:  0;
+    height: 0;
+    z-index: 1;
+}
+
+.item-1{
+    right: 60px;
+    cursor: pointer;
+}
+
+.sidenav-container{
+    position: relative;
+}
+
+.sidenav{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: var(--element-primary);
+    padding-top: 60px;
+    
+}
+
+.profile-box{
+    height: 20px;
+    position: relative;
+    bottom: 5px;
+}
+
+.profile{
+    position: relative;
+    bottom: 6px;
+    right: 10px;
+    fill: #ffffff;
+}
+
+.name{
+    width: 135px;
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+    font-weight: 300;
+}
+
+.border{
+    position: relative;
+    top: 10px;
+    display: flex;
+    width: 245px;
+    justify-content: center;
+}
+
+.sidenav-border{
+    justify-self: center;
+    height: 2px;
+    width: 220px;
+    border-radius: 99999px;
+    background: var(--backgorund-primary);
+}
+
+.filler{
+    position: relative;
+    top: 30px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+}
+  
+.sidenav a:hover{
+    color: var(--element-secondary);
+}
+  
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#outer{
+    position: absolute;
+    width: 0;
+    height: o;
+}
+
+#main{
+    transition: margin-left .5s;
+}
+
+.item-2{
+    grid-column: span 2;
+}
+
+.img-logo{
+    z-index: 1;
+}
+
+.cls-1 {
+    fill: #014040;
+  }
+
+  .cls-2 {
+    fill: #f27405;
+  }
+
+  .cls-3 {
+    fill: #008f8c;
+  }
+
+.item-3{
+    width: 150px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.signin{
+    top: 2.5px;
+    padding: 0px;
+}
+
+.signin:hover{
+    color: var(--element-secondary);
+}
+
+.signup{
+    width: 65px;
+    height: 21px;
+    right: 6px;
+    border-radius: 20px;
+    background: var(--element-primary);
+    color: white;
+}
+
+.signup:hover{
+    background: var(--element-secondary);
+}
+
+.nav-border{
+    height: 2px;
+    border-radius: 99999px;
+    background: linear-gradient(90deg, var(--backgorund-primary) 0%, var(--extra) 30%, var(--extra) 70%, var(--backgorund-primary) 100%);
+}
+
+section{min-height: 400px;}
+
+.slogan{
+    display: block;
+    align-items: flex-start;
+    margin: 10rem 8rem;
+}
+
+.txt-1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+}
+
+.txt-2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    top: 5px;
+    font-style: italic;
+}
+
+.join{
+    width: 479px;
+    margin-top: -4rem;
+    margin-left: 6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-btn{
+    color: white;
+    font-size: 24px;
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--element-primary);
+    padding: 5px;
+    width: 188px;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+}
+
+.join-btn:hover{
+    background-color: #f27405;
+}
+
+.join-slogan{
+    font-size: 13px;
+    color: var(--element-primary);
+    margin-top: 5px;
+}
+
+/* ///////////////////////CODE//////////////////////// */
+
+/* ======================= BALLS ====================== */
+#ellipse-1{
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    left: 60vw;
+    top: 10vw;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--element-primary);
+}
+
+#ellipse-2{
+    width: 45rem;
+    height: 45rem;
+    position: absolute;
+    left: 47vw;
+    top: 21.5vw;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--element-secondary);
+}
+.hero-img{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    width: 50%;
+    margin-top: 2rem;
+    right: 0;
+}
+
+.img-2{
+    position: relative;
+    right: 4rem;
+    top: 2rem;
+    scale: 90%;
+}
+
+.img-1{
+    position: relative;
+    right: 12rem;
+    top: 7rem;
+    z-index: -1;
+    scale: 90%;
+}
+
+
+/* ======================= BALLS ====================== */
+
+/* ================== LOWER SECTION =================== */
+
+/* -------------------- SEMANTICS --------------------- */
+article svg{fill: var(--background-secondary);}
+/* -------------------- SEMANTICS --------------------- */
+
+/* ---------------------- CLASS ----------------------- */
+.lower-container-1{
+    width: 100vw;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -4.7vw;
+    background: var(--background-secondary);
+}
+
+.benefits{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: var(--backgorund-primary);
+}
+
+.box{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.box1{
+    background: var(--extra);
+    width: 360px;
+    height: 360px;
+    border-radius: 32px;
+}
+
+.box2{
+    background: var(--extra);
+    width: 360px;
+    height: 360px;
+    border-radius: 32px;
+}
+
+.box3{
+    background: var(--extra);
+    width: 360px;
+    height: 360px;
+    border-radius: 32px;
+}
+
+.many{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    color: var(--backgorund-primary);
+}
+
+.lower-container-2{
+    width: 100vw;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--backgorund-primary);
+}
+
+.features{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: var(--element-primary);
+    margin-top: 5rem;
+}
+
+/* ---------------------- CLASS ----------------------- */
+
+/* ----------------------- ID ------------------------- */
+/* ----------------------- ID ------------------------- */
+
+/* ================== LOWER SECTION =================== */
